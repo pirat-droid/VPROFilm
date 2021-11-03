@@ -1,0 +1,48 @@
+.poster {
+    position: relative;
+    z-index: 1;
+}
+
+.rating {
+    position: relative;
+    z-index: 2;
+    top: -95px;
+    left: -10px;
+    color: white;
+    background-color: green;
+    width: 40px;
+}
+
+.rating span {
+    font-size: 80%;
+    display: block;
+    text-align: center;
+}
+
+.country-genre {
+    font-size: 15px;
+    color: black;
+}
+
+.view-p {
+    font-family: "Arial Black";
+}
+
+.film-name p {
+    font-size: 13px;
+    color: darkgrey;
+}
+
+.film-description {
+    align-items: center;
+}
+
+.premiere {
+    font-size: 13px;
+    color: darkgrey;
+}
+
+.link-film-name-a {
+    color: #000 !important;
+    text-decoration: none
+}

@@ -1,0 +1,37 @@
+{% extends 'film/base.html' %}
+{% block content %}
+    <div class="col-10">
+        <div class="container-fluid p-3">
+            {% for film in films %}
+                <div class="row border bg-light row-cols-auto p-3 film-description">
+                    <div class="number">
+                        <span>1</span>
+                    </div>
+                    <div class="col">
+                        <div class="poster">
+                            <a>
+                                <img alt="{{ film.name }}" src="{{ film.poster.url }}" style="max-height: 100px">
+                            </a>
+                        </div>
+                        <div class="rating">
+                            <span>{{ film.rating }}</span>
+                        </div>
+                    </div>
+                    <div class="film-name">
+                        <a href="#" class="link-film-name-a">{{ film.name }}</a>
+                        <p>{{ film.world_premiere }}</p>
+                        <p>{{ film.country }} &#183; {% for genre in film.genre.all %} {{ genre }}
+                        {% endfor %} </p>
+                        <p class="view-p">Посмотрело: {{ film.views }}</p>
+                    </div>
+                    <div class="country-genre">
+
+                    </div>
+
+
+                </div>
+                </div>
+            {% endfor %}
+    </div>
+    </div>
+{% endblock %}

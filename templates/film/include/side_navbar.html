@@ -1,0 +1,13 @@
+<div class="col-2">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid" style="background-color: cornsilk">
+            <ul>
+                {% for object in genres %}
+                    <li>
+                        <a class="navbar-brand" href="{{ object.slug }}">{{ object.genre }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</div>
